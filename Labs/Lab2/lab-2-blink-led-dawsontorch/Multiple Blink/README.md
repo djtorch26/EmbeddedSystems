@@ -1,0 +1,3 @@
+## Multiple Blink
+
+This code instantiates instead of one led, now 2 Led's (1.0 & 2.1 for the G2), (1.0 & 9.7 for the FR6989). The code is not in low power mode, therefore it will run through the code sequentially, and eventually loop back, infinitely. In order to make both led's blink at different rates we put 3 delays total between 3 LED blink calls. Therefore, since we have only 2 LED's to blink, we blink one LED twice before we blink the other one, to give the effect of blinking at different rates.
